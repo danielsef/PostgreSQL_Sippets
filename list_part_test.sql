@@ -1,3 +1,8 @@
+#######
+##  https://medium.com/@devTonyM/in-postgresql-10-tables-will-partition-themselves-bb59be674998
+#######
+
+
 
 create table hbase (model_id text, hbase_key text, hbase_value text)
 PARTITION BY LIST (model_id);
