@@ -1,7 +1,9 @@
 #######
 ##  https://medium.com/@devTonyM/in-postgresql-10-tables-will-partition-themselves-bb59be674998
 #######
-
+for row in dfgroupbyvaues.rdd.collect():
+    print(str(row["user_id"]) + ", " + str(row["bar"]) + ", " + str(row["hbase_result"]))
+#######
 
 
 create table hbase (model_id text, hbase_key text, hbase_value text)
