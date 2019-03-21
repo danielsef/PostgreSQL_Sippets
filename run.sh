@@ -1,3 +1,7 @@
+# Build docker image
+docker build -t p-db-base:1-0 .
+
+# Build docker container
 docker run --name p-db-instance \
            -e POSTGRES_DB="postgres" \
            -e POSTGRES_USER="postgres" \
